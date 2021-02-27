@@ -1,0 +1,12 @@
+The past decade has been marked by a significant increase in internet access media
+and an abundance of cloud-based storage, high-definition multimedia streaming, and
+services providing software, platforms, and infrastructures (SaaS, PaaS, and IaaS). This
+has resulted in an unprecedented demand in the speed and volume of data transfers. As
+forecasted by Cisco (Fig. 1.1), this demand will definitely continue to grow. By the year
+2018, 8.6 zettabytes of data will be transferred per year [1]. What is astounding is that
+75% of this network traffic is within the datacenter itself (east-west traffic pattern). On top
+of that, the internet of things or everything (IoT/IoE) is still nascent. It can be speculated
+that as IoT develops, it will further exacerbate network congestion within datacenters.
+Moreover, the massive volume of data has resulted in the creation of large ware-house scale
+datacenters. For such long and fast links, optical interconnects are believed to be superior
+to other forms of interconnects and are now becoming inevitable.

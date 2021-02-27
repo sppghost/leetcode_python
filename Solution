@@ -1,0 +1,43 @@
+import sys
+while True:
+    try:
+        s = input().split()
+        row = int(s[0])
+        col = int(s[1])
+        m = row
+        n = col
+        x = 0
+        y = 0
+        count = 0
+        res = []
+        index = 0
+        while n - 1 - index >= index and m - 1 - index > index:
+            x = index
+            for i in range(index, n - 1 - index):
+                y = i
+                count += 1
+                if str(count)[-1] == '7' and (count // 10) % 2 == 1:
+                    res.append([x, y])
+            y = n - 1 - index
+            for i in range(index, m - 1 - index):
+                x = i
+                count += 1
+                if str(count)[-1] == '7' and (count // 10) % 2 == 1:
+                    res.append([x, y])
+            x = n - 1 - index
+            for i in range(n - 1 - index, index, -1):
+                y = i
+                count += 1
+                if str(count)[-1] == '7' and (count // 10) % 2 == 1:
+                    res.append([x, y])
+            y = index
+            for i in range(m - 1 - index, index, -1):
+                x = i
+                count += 1
+                if str(count)[-1] == '7' and (count // 10) % 2 == 1:
+                    res.append([x, y])
+            index += 1
+        res = str(res).replace(' ', '')
+        print(res)
+    except Exception:
+        break
